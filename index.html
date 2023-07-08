@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <h1>DojoWeather</h1>
+        <a href="#" class="city" onclick="aviso()">Burbank</a>
+        <a href="#" class="city" onclick="aviso()">Chicago</a>
+        <a href="#" class="city" onclick="aviso()">Dallas</a>
+    </div>
+    <div class="main">
+        <div class="second-bar">
+            <h2>San Jose</h2>
+            <div class="format-flex">
+                <p>show temperature in</p>
+                <select name="temperature" onchange="cambiar(this)">
+                    <option value="celsius">°C</option>
+                    <option value="fahrenheit">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="container">
+            <div class="day-div">
+                <h3>Today</h3>
+                <img src="assets/some_rain.png">
+                <p>some rain</p>
+                <div class="temp">
+                    <h3 class="max-temp"><span class="current">24</span>°</h3>
+                    <h3 class="min-temp"><span class="current">18</span>°</h3>
+                </div>
+            </div>
+            <div class="day-div">
+                <h3>Tomorrow</h3>
+                <img src="assets/some_sun.png">
+                <p>some rain</p>
+                <div class="temp">
+                    <h3 class="max-temp"><span class="current">27</span>°</h3>
+                    <h3 class="min-temp"><span class="current">19</span>°</h3>
+                </div>
+            </div>
+            <div class="day-div">
+                <h3>Friday</h3>
+                <img src="assets/some_clouds.png">
+                <p>some rain</p>
+                <div class="temp">
+                    <h3 class="max-temp"><span class="current">21</span>°</h3>
+                    <h3 class="min-temp"><span class="current">16</span>°</h3>
+                </div>
+            </div>
+            <div class="day-div">
+                <h3>Saturday</h3>
+                <img src="assets/some_sun.png">
+                <p>some rain</p>
+                <div class="temp">
+                    <h3 class="max-temp"><span class="current">26</span>°</h3>
+                    <h3 class="min-temp"><span class="current">21</span>°</h3>
+                </div>
+            </div>
+        </div>
+        <div id="cookies-div">
+            <img src="assets/cookie.png" alt="cookie img" class="cookie-img">
+            <div class="info">
+                <h4>Stop! Cookie time</h4>
+                <p>
+                    We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features
+                    and to analyse our traffic.
+                    <a href="#">Read more...</a>
+                </p>
+            </div>
+            <button onclick="acceptCookies()">I Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
